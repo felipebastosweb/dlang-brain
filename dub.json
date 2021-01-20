@@ -1,0 +1,9 @@
+{
+	"authors": [
+		"felipe"
+	],
+	"copyright": "Copyright © 2021, felipe",
+	"description": "A minimal D application.",
+	"license": "proprietary",
+	"name": "neuronio"
+}
