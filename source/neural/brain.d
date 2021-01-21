@@ -19,17 +19,18 @@ bool cobrar() {
     return true;
 }
 
-auto know(string key) {
+auto know_list() {
     auto _know = [
         "divulgar": &divulgar,
         "vender": &vender,
         "cobrar": &cobrar
     ];
-    auto action = _know[key];
-    return action();
+    return _know;
 }
 
 unittest {
-    auto knowledge = know("divulgar");
-    assert(knowledge == true);
+    auto knowledgeList = know_list();
+    auto know = knowledgeList["divulgar"];
+    bool knowRunned = know();
+    assert(knowRunned == true);
 };
